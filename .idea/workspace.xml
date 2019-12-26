@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ea00b91-1b53-43e6-8c92-1b3316455988" name="Default Changelist" comment="" />
+    <list default="true" id="9ea00b91-1b53-43e6-8c92-1b3316455988" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/project_635-1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -46,9 +49,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project_635-1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="TomEE 8.5.61" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.61" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -207,11 +212,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="TomEE Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -231,11 +231,18 @@
       <updated>1577374666063</updated>
       <workItem from="1577374669024" duration="1056000" />
       <workItem from="1577375876562" duration="760000" />
+      <workItem from="1577377621196" duration="27000" />
+      <workItem from="1577377657833" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/project_635-1" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" width="1092" height="749" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577375899303">
@@ -250,10 +257,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="208" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577375723471" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1577376635973">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1577377646430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577376635973" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577377646430" />
     <state width="1293" height="282" key="GridCell.Tab.0.bottom" timestamp="1577376636967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -318,5 +325,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1293" height="282" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577376636968" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1577377669548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577377669548" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1577377622484">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577377622484" />
   </component>
 </project>
