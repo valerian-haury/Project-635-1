@@ -1,3 +1,0 @@
-<div>
-    included textblock
-</div>
