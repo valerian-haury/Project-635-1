@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
     <persistence-unit name="NewPersistenceUnit">
-
+        <class>ch.hesge.eshop.models.Product</class>
+        <properties>
+            <property name="tomee.jpa.factory.lazy" value="true"/>
+            <property name="openjpa.Log" value="DefaultLevel=TRACE, Tool=INFO"/>
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema"/>
+        </properties>
     </persistence-unit>
 </persistence>
