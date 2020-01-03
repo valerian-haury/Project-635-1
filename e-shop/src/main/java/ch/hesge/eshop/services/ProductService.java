@@ -42,10 +42,17 @@ public class ProductService {
         return product;
     }
 
+
+    public void persist(Product product) {
+        em.persist(product);
+    }
+
     @Transactional
-    public void persistProducts(List<Product> products) {
+    public void persist(List<Product> products) {
         for (Product product : products) {
-            em.persist(product);
+            persist(product);
         }
     }
+
+
 }
