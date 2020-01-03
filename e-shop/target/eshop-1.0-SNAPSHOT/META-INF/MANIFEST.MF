@@ -1,5 +1,4 @@
 Manifest-Version: 1.0
-Built-By: Mota
+Built-By: Mota & Haury
 Created-By: IntelliJ IDEA
 Build-Jdk: 1.8
-
