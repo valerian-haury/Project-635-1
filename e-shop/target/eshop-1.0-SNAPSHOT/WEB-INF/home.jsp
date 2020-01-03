@@ -12,8 +12,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/home.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/general.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/caddy.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menubar.css">
 </head>
 <body>
+<div class="top-bar">
+    <jsp:include page="/menubar"/>
+</div>
     <div class="home" style="background-image: url('${pageContext.request.contextPath}/img/home_background.jpg')">
         <div class="container">
             <a href="${pageContext.request.contextPath}/products"/>
