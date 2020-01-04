@@ -26,10 +26,9 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
 
-        List<Product> products = productService.getProducts();
+        List<Product> products = productService.getProducts(3);
         req.setAttribute("products", products);
 
-        List<Product> ps = (List<Product>) req.getAttribute("products");
         req.getRequestDispatcher("/WEB-INF/home.jsp").forward(req, resp);
     }
 }
