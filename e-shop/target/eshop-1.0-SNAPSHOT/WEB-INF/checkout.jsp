@@ -11,13 +11,10 @@
     <title>welcome to checkout</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/general.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/caddy.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/menubar.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/checkout.css">
 </head>
 <body>
-<div class="top-bar">
-    <jsp:include page="/menubar"/>
-</div>
+
 
 </body>
 </html>

@@ -42,54 +42,54 @@ public class InitializationListener  implements ServletContextListener{
         ));
         products.add( new Product(
                 "Product-2",
-                79.90,
+                24.90,
                 "product_2.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-3",
-                12.90,
+                299.900,
                 "product_3.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-4",
                 99.90,
-                "product_4.jpg",
+                "product_2.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-5",
                 59.90,
-                "product_5.jpg",
+                "product_1.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-6",
                 14.90,
-                "product_6.jpg",
+                "product_3.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-7",
                 89.90,
-                "product_7.jpg",
+                "product_2.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
         products.add( new Product(
                 "Product-8",
                 79.90,
-                "product_8.jpg",
+                "product_3.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));        products.add( new Product(
                 "Product-9",
                 49.90,
-                "product_9.jpg",
+                "product_1.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));        products.add( new Product(
                 "Product-10",
                 29.90,
-                "product_10.jpg",
+                "product_2.jpg",
                 "Sed porta condimentum ex in dictum. Vestibulum non nulla ut purus facilisis volutpat ultrices vel magna. Aenean viverra porttitor velit vel ultricies. Donec eu nibh ipsum. Proin varius sem non ligula dignissim, ut iaculis diam fermentum."
         ));
 

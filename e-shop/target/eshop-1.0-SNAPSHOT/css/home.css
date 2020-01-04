@@ -19,6 +19,16 @@
     text-decoration: none;
 }
 
+.container-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+}
+
 .home-title{
     background-color: #ffffff;
     padding: 10px;
