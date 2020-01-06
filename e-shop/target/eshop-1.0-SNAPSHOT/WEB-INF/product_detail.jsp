@@ -11,7 +11,7 @@
 <% Product product = (Product)request.getAttribute("product"); %>
 <html>
 <head>
-    <title><%=product.getName()%> - Détail</title>
+    <title><%=product.getName()%> - détail</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="icon" href="${pageContext.request.contextPath}/img/petshoplogo.ico" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/home.css">

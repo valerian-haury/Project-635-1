@@ -1,16 +1,13 @@
 package ch.hesge.eshop.servlets;
 
 import ch.hesge.eshop.models.Product;
-
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 
-@WebServlet("/checkout")
 public class CheckoutServlet extends HttpServlet {
 
     @Override
