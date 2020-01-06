@@ -1,4 +1,4 @@
-package ch.hesge.eshop.servlets;
+package ch.hesge.eshop.listeners;
 
 import ch.hesge.eshop.models.Product;
 import ch.hesge.eshop.services.ProductService;
@@ -6,11 +6,9 @@ import ch.hesge.eshop.services.ProductService;
 import javax.inject.Inject;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebListener
 public class InitializationListener  implements ServletContextListener{
 
     private ProductService productService;

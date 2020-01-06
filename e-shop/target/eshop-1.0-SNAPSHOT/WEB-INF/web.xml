@@ -6,4 +6,81 @@
     http://xmlns.jcp.org/xml/ns/javaee
     http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
         version="4.0">
+
+    <listener>
+        <listener-class>ch.hesge.eshop.listeners.InitializationListener</listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>CaddyServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.CaddyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CaddyServlet</servlet-name>
+        <url-pattern>/caddy/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MenuBarServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.MenuBarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MenuBarServlet</servlet-name>
+        <url-pattern>/menubar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.ProductDetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductDetailServlet</servlet-name>
+        <url-pattern>/product/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/product</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>ch.hesge.eshop.servlets.ProductsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
 </web-app>
