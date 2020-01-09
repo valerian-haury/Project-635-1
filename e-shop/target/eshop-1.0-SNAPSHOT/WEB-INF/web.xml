@@ -36,7 +36,6 @@
     <servlet-mapping>
         <servlet-name>HomeServlet</servlet-name>
         <url-pattern>/home</url-pattern>
-        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -83,4 +82,31 @@
         <servlet-name>ProductsServlet</servlet-name>
         <url-pattern>/products</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>AddToCaddyFilter</filter-name>
+        <filter-class>ch.hesge.eshop.filters.AddToCaddyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AddToCaddyFilter</filter-name>
+        <url-pattern>/caddy/add</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>DeleteFromCaddyFilter</filter-name>
+        <filter-class>ch.hesge.eshop.filters.DeleteFromCaddyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>DeleteFromCaddyFilter</filter-name>
+        <url-pattern>/caddy/delete</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>RemoveAllFromCaddyFilter</filter-name>
+        <filter-class>ch.hesge.eshop.filters.RemoveAllFromCaddyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RemoveAllFromCaddyFilter</filter-name>
+        <url-pattern>/caddy/removeall</url-pattern>
+    </filter-mapping>
 </web-app>

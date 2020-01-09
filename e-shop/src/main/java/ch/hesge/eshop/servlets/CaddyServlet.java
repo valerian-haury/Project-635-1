@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class CaddyServlet extends HttpServlet {
@@ -15,7 +17,7 @@ public class CaddyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Map<Product, Integer> caddy = (Map<Product, Integer>) req.getSession().getAttribute("caddy");
-        //req.getSession().setAttribute("nbProducts", getNumberProduct(caddy));
+        req.getSession().setAttribute("nbProducts", getNumberProduct(caddy));
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/caddy.jsp").include(req, resp);
     }
@@ -25,14 +27,14 @@ public class CaddyServlet extends HttpServlet {
         resp.sendRedirect(req.getHeader("Referer"));
     }
 
-    /*private int getNumberProduct(Map<Product, Integer> caddy){
+    private int getNumberProduct(Map<Product, Integer> caddy){
         List<Integer> values = new ArrayList<>(caddy.values());
         int sum = 0;
         for (Integer value: values) {
             sum += value;
         }
         return sum;
-    }*/
+    }
 
 }
 
