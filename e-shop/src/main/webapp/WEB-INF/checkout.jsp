@@ -12,28 +12,28 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="icon" href="${pageContext.request.contextPath}/img/petshoplogo.ico" />
-    <title>welcome to checkout</title>
+    <title>Checkout</title>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/general.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/checkout.css">
 </head>
 <body>
-<div class="container">
+<div class="container" >
     <table class="table">
+
         <%
             Double total = 0.0;
-            Map<Product, Integer> productsCaddy = (Map<Product, Integer>) request.getAttribute("productsCaddy");
-            for (Map.Entry<Product, Integer> rowProductsCaddy : productsCaddy.entrySet()) {
-                Double price = rowProductsCaddy.getKey().getPrice() * rowProductsCaddy.getValue();
+            Map<Product, Integer> contentCaddy = (Map<Product, Integer>) request.getAttribute("contentCaddy");
+            for (Map.Entry<Product, Integer> rowCaddy : contentCaddy.entrySet()) {
+                Double price = rowCaddy.getKey().getPrice() * rowCaddy.getValue();
                 total += price;
 
         %>
+
         <tr class="row">
             <td>
                 <div class="cell">
-                    <img class="product-image"
-                         src="${pageContext.request.contextPath}/img/products/<%=rowProductsCaddy.getKey().getUrlImg()%>"
-                         alt="<%=rowProductsCaddy.getKey().getName()%>">
-                    <%=rowProductsCaddy.getKey().getName()%>
+                    <img class="product-image"src="${pageContext.request.contextPath}/img/products/<%=rowCaddy.getKey().getUrlImg()%>"alt="<%=rowCaddy.getKey().getName()%>">
+                    <%=rowCaddy.getKey().getName()%>
                 </div>
             </td>
             <td>
@@ -58,7 +58,7 @@
             <td>
                 <div class="cell">
                     <form action="${pageContext.request.contextPath}/caddy/removeall" method="post">
-                        <input type="hidden" name="id" value="<%=rowProductsCaddy.getKey().getID()%>">
+                        <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                         <button class="table-cell-button" type="submit">
                             <img class="image-trash" src="${pageContext.request.contextPath}/img/trash.png">
                         </button>
@@ -79,7 +79,7 @@
     </div>
     <div class="container-pay">
         <p><a class="back-link" href="${pageContext.request.contextPath}/products">Retour au shopping</a></p>
-        <% if (productsCaddy.size() > 0) { %>
+        <% if (contentCaddy.size() > 0) { %>
         <p><a class="pay-link" href="${pageContext.request.contextPath}/payment">Payer</a></p>
         <% } else {%>
         <p><a class="pay-link-disable">Payer</a></p>
