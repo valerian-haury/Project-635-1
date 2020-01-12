@@ -38,15 +38,19 @@
             </td>
             <td>
                 <div class="cell">
-                    <%=rowProductsCaddy.getValue()%>
                     <div class="table-cell-container-button">
                         <form action="${pageContext.request.contextPath}/caddy/add" method="post">
                             <input type="hidden" name="id" value="<%=rowProductsCaddy.getKey().getID()%>">
-                            <button class="table-cell-button" type="submit">+</button>
+                            <button class="table-cell-button" type="submit">
+                                <img class="image-trash" src="${pageContext.request.contextPath}/img/plus.png">
+                            </button>
                         </form>
+                        <%=rowProductsCaddy.getValue()%>
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
                             <input type="hidden" name="id" value="<%=rowProductsCaddy.getKey().getID()%>">
-                            <button class="table-cell-button" type="submit">-</button>
+                            <button class="table-cell-button" type="submit">
+                                <img class="image-trash" src="${pageContext.request.contextPath}/img/minus.png">
+                            </button>
                         </form>
                     </div>
                 </div>

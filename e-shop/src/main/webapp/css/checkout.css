@@ -8,8 +8,7 @@
 }
 tr td{
     margin: 1px;
-    border:1.5pt solid black;
-    border-radius: 5px;
+
 }
 
 .row{
@@ -32,9 +31,8 @@ tr td{
 }
 
 .cell button, input[type="submit"], input[type="reset"] {
-    border: black 1px solid;
+    border: black 0px solid;
     background-color: white;
-    border-radius: 5px;
     color: inherit;
     padding: 10px 10px 10px 10px ;
     font: inherit;
@@ -96,7 +94,6 @@ tr td{
 .pay-link-disable {
     border: black 2px solid;
     background-color: lightgray;
-    border-radius: 5px;
     color: inherit;
     padding: 10px 10px 10px 10px ;
     font: inherit;
