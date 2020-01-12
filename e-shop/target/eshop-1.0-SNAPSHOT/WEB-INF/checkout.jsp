@@ -45,7 +45,7 @@
                                 <img class="image-trash" src="${pageContext.request.contextPath}/img/plus.png">
                             </button>
                         </form>
-                        <%=rowCaddy.getValue()%>
+                        <p class="product-number-text"><%=rowCaddy.getValue()%></p>
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
                             <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
@@ -78,7 +78,7 @@
         <h2>CHF <%=String.format("%.2f", total)%>-</h2>
     </div>
     <div class="container-pay">
-        <p><a class="back-link" href="${pageContext.request.contextPath}/products">Retour au shopping</a></p>
+        <p class="backtoshop-button"><a class="back-link" href="${pageContext.request.contextPath}/products">Retour au shopping</a></p>
         <% if (contentCaddy.size() > 0) { %>
         <p><a class="pay-link" href="${pageContext.request.contextPath}/payment">Payer</a></p>
         <% } else {%>

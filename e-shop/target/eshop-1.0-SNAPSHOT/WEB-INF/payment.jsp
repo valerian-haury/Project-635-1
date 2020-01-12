@@ -8,12 +8,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Payment</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="icon" href="${pageContext.request.contextPath}/img/petshoplogo.ico" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/general.css">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/payment.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/payments.css">
 </head>
 <body>
 <div class="container">
@@ -53,9 +55,9 @@
             </div>
             <div class="container-input">
                 <div class="field">
-                    <label>Name : </label>
+                    <label>Nom-prénom propriétaire : </label>
                     <div class="input">
-                        <input name="name" type="text" placeholder="Name" required autofocus autocomplete="off"
+                        <input name="name" type="text" placeholder="Nom-prénom" required autofocus autocomplete="off"
                                value="${name}"/>
                         <p class="red">${nameMessage}</p>
                     </div>
@@ -71,24 +73,24 @@
                 </div>
 
                 <div class="field">
-                    <label>Credit card :</label>
+                    <label>N° carte de crédit :</label>
                     <div class="input">
-                        <input name="numberCard" type="text" placeholder="Credit card" minlength="16" maxlength="16"
+                        <input name="numberCard" type="text" placeholder="N° carte de crédit" minlength="16" maxlength="16"
                                required autocomplete="off" value="${numberCard}"/>
                         <p class="red">${numberCardMessage}</p>
                     </div>
                 </div>
 
                 <div class="field">
-                    <label>Validity date :</label>
+                    <label>Date d'expiration :</label>
                     <div class="field-month-year">
                         <div class="input">
-                            <input name="month" type="number" placeholder="Month" min="1" max="12" required
+                            <input name="month" type="number" placeholder="Mois" min="1" max="12" required
                                    autocomplete="off" value="${month}"/>
                             <p class="red">${monthMessage}</p>
                         </div>
                         <div class="input">
-                            <input name="year" type="number" placeholder="Year" min=<%=LocalDate.now().getYear()%> max=<%=LocalDate.now().getYear()+100%> required
+                            <input name="year" type="number" placeholder="Année" min=<%=LocalDate.now().getYear()%> max=<%=LocalDate.now().getYear()+100%> required
                                    autocomplete="off" value="${year}"/>
                             <p class="red">${yearMessage}</p>
                         </div>

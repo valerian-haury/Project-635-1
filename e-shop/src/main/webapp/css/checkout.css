@@ -75,6 +75,7 @@ tr td{
 
 .back-link{
     color: black;
+    text-decoration: none;
 }
 
 
@@ -98,5 +99,14 @@ tr td{
     font: inherit;
     outline: inherit;
     width: 70px;
+
+}
+
+.backtoshop-button {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.product-number-text {
 
 }
