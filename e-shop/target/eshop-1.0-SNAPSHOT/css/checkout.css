@@ -94,7 +94,6 @@ tr td{
 .pay-link-disable {
     border: black 2px solid;
     background-color: lightgray;
-    border-radius: 5px;
     color: inherit;
     padding: 10px 10px 10px 10px ;
     font: inherit;

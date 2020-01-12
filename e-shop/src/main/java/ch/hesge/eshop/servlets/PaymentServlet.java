@@ -16,7 +16,10 @@ import java.util.Map;
 
 public class PaymentServlet extends HttpServlet {
 
-    private final DataValidatorService dataValidatorService;
+    private DataValidatorService dataValidatorService;
+
+    public PaymentServlet() {
+    }
 
     @Inject
     public PaymentServlet(DataValidatorService dataValidatorService) {

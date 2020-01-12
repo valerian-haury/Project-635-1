@@ -40,14 +40,14 @@
                 <div class="cell">
                     <div class="table-cell-container-button">
                         <form action="${pageContext.request.contextPath}/caddy/add" method="post">
-                            <input type="hidden" name="id" value="<%=rowProductsCaddy.getKey().getID()%>">
+                            <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
                                 <img class="image-trash" src="${pageContext.request.contextPath}/img/plus.png">
                             </button>
                         </form>
-                        <%=rowProductsCaddy.getValue()%>
+                        <%=rowCaddy.getValue()%>
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
-                            <input type="hidden" name="id" value="<%=rowProductsCaddy.getKey().getID()%>">
+                            <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
                                 <img class="image-trash" src="${pageContext.request.contextPath}/img/minus.png">
                             </button>
@@ -82,9 +82,8 @@
         <% if (contentCaddy.size() > 0) { %>
         <p><a class="pay-link" href="${pageContext.request.contextPath}/payment">Payer</a></p>
         <% } else {%>
-        <p><a class="pay-link-disable">Pay</a></p>
+        <p><a class="pay-link-disable">Payer</a></p>
         <% } %>
-
     </div>
 </div>
 
