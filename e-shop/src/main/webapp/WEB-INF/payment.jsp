@@ -1,13 +1,17 @@
 <%@ page import="ch.hesge.eshop.models.Product" %>
 <%@ page import="java.util.Map" %>
-<%@ page import="java.time.LocalDate" %><%--
+<%@ page import="java.time.LocalDate" %>
+
+<%--
   Created by IntelliJ IDEA.
   User: Mota
   Date: 03.01.2020
   Time: 15:44
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +27,7 @@
         <form class="form" action="${pageContext.request.contextPath}/payment" method="post">
             <div class="caddie">
                 <table class="table">
+
                     <%
                         double total = 0.0;
                         Map<Product, Integer> contentCaddy = (Map<Product, Integer>) request.getAttribute("contentCaddy");
@@ -30,6 +35,7 @@
                             double price = rowCaddy.getKey().getPrice() * rowCaddy.getValue();
                             total += price;
                     %>
+
                     <tr class="row">
                         <td>
                             <div class="cell"><%=rowCaddy.getKey().getName()%>
@@ -49,7 +55,7 @@
                 </table>
                 <div class="container-total">
                     <h3>Total</h3>
-                    <h3>CHF <%=String.format("%.2f", total)%>-</h3>
+                    <h3>CHF <%=String.format("%.2f", total)%></h3>
                 </div>
 
             </div>

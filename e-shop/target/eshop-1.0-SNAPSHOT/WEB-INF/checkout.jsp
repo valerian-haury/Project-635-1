@@ -67,7 +67,7 @@
             </td>
             <td>
                 <div class="cell">
-                    CHF <%=String.format("%.2f", price)%>-
+                    CHF <%=String.format("%.2f", price)%>
                 </div>
             </td>
         </tr>
@@ -75,7 +75,7 @@
     </table>
     <div class="container-total">
         <h2>Total</h2>
-        <h2>CHF <%=String.format("%.2f", total)%>-</h2>
+        <h2>CHF <%=String.format("%.2f", total)%></h2>
     </div>
     <div class="container-pay">
         <p class="backtoshop-button"><a class="back-link" href="${pageContext.request.contextPath}/products">Retour au shopping</a></p>

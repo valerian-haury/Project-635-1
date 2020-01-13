@@ -57,15 +57,15 @@ public class PaymentServlet extends HttpServlet {
         Boolean validEmail = true;
         Boolean validCard = true;
 
-        if (!dataValidatorService.isValidName(name)) {
+        if (!dataValidatorService.isInvalidName(name)) {
             req.setAttribute("nameMessage", "Le nom est requis");
             validName = false;
         }
-        if (!dataValidatorService.isValidEmail(email)) {
+        if (!dataValidatorService.isInvalidEmail(email)) {
             req.setAttribute("emailMessage", "L'email est invalide");
             validEmail = false;
         }
-        if (!dataValidatorService.isValidNumberCard(numberCard)) {
+        if (!dataValidatorService.isInvalidNumberCard(numberCard)) {
             req.setAttribute("numberCardMessage", "La carte de crédit est invalide");
             validCard = false;
         }

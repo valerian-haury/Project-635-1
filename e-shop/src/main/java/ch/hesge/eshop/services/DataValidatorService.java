@@ -6,15 +6,15 @@ import java.util.regex.Pattern;
 
 public class DataValidatorService {
 
-    public Boolean isValidName(String name) {
-        if (name == null || name.isEmpty() || name.trim().isEmpty()) {
+    public Boolean isInvalidName(String name) {
+        if (name.trim().isEmpty()) {
             return false;
         }
         return true;
     }
 
     //https://stackoverflow.com/questions/9315647/regex-credit-card-number-tests
-    public Boolean isValidNumberCard(String numberCard) {
+    public Boolean isInvalidNumberCard(String numberCard) {
         if (numberCard == null || numberCard.isEmpty()) {
             return false;
         }
@@ -24,11 +24,11 @@ public class DataValidatorService {
     }
 
     //https://emailregex.com/
-    public Boolean isValidEmail(String email) {
+    public Boolean isInvalidEmail(String email) {
         if (email == null || email.isEmpty()) {
             return false;
         }
-        Pattern pattern = Pattern.compile("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,64}", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         return matcher.find();
     }

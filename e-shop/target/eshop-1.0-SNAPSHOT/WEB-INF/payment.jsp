@@ -49,7 +49,7 @@
                 </table>
                 <div class="container-total">
                     <h3>Total</h3>
-                    <h3>CHF <%=String.format("%.2f", total)%>-</h3>
+                    <h3>CHF <%=String.format("%.2f", total)%></h3>
                 </div>
 
             </div>

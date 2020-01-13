@@ -1,12 +1,16 @@
 <%@ page import="ch.hesge.eshop.models.Product" %>
-<%@ page import="java.util.Map" %><%--
+<%@ page import="java.util.Map" %>
+
+<%--
   Created by IntelliJ IDEA.
   User: Mota
   Date: 03.01.2020
   Time: 15:23
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -67,7 +71,7 @@
             </td>
             <td>
                 <div class="cell">
-                    CHF <%=String.format("%.2f", price)%>-
+                    CHF <%=String.format("%.2f", price)%>
                 </div>
             </td>
         </tr>
@@ -75,7 +79,7 @@
     </table>
     <div class="container-total">
         <h2>Total</h2>
-        <h2>CHF <%=String.format("%.2f", total)%>-</h2>
+        <h2>CHF <%=String.format("%.2f", total)%></h2>
     </div>
     <div class="container-pay">
         <p class="backtoshop-button"><a class="back-link" href="${pageContext.request.contextPath}/products">Retour au shopping</a></p>
@@ -86,6 +90,5 @@
         <% } %>
     </div>
 </div>
-
 </body>
 </html>
