@@ -2,18 +2,14 @@ package ch.hesge.eshop.servlets;
 
 import ch.hesge.eshop.models.Product;
 import ch.hesge.eshop.services.DataValidatorService;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import javax.inject.Inject;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +28,9 @@ public class PaymentServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Map<Product, Integer> contentCaddy = (Map<Product, Integer>) req.getSession().getAttribute("caddy");
+        String yearOfUse = String.valueOf(LocalDate.now().getYear());
         req.setAttribute("contentCaddy", contentCaddy);
+        req.setAttribute("yearOfUse", yearOfUse);
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/payment.jsp").forward(req, resp);
     }
@@ -43,8 +41,8 @@ public class PaymentServlet extends HttpServlet {
         if (validateDataForPayment(req)) {
             req.getSession().setAttribute("caddy", new HashMap<>());
             String message = "Merci pour votre commande !";
-            req.setAttribute("paymentSucess", message);
-            resp.sendRedirect("/WEB-INF/products.jsp");
+            resp.sendRedirect(req.getContextPath() + "/products?message=" + message);
+
         } else {
             doGet(req, resp);
         }
@@ -71,9 +69,6 @@ public class PaymentServlet extends HttpServlet {
             req.setAttribute("numberCardMessage", "La carte de crédit est invalide");
             validCard = false;
         }
-        if (validName && validEmail && validCard){
-            return true;
-        }
-        return false;
+        return (validName && validEmail && validCard);
     }
 }

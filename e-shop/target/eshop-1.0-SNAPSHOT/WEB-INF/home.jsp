@@ -26,7 +26,7 @@
     <div class="home" style="background-image: url('${pageContext.request.contextPath}/img/home_background.jpg')">
         <div class="container">
             <a href="${pageContext.request.contextPath}/products">
-                <div class="home-title"><h1>Welcome to e-shop !</h1></div>
+                <div class="home-title"><h1>Bienvenue sur notre e-shop !</h1></div>
             </a>
             <a href="${pageContext.request.contextPath}/products">
                 <div class="home-description">

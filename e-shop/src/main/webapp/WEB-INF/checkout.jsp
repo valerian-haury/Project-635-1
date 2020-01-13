@@ -42,14 +42,14 @@
                         <form action="${pageContext.request.contextPath}/caddy/add" method="post">
                             <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
-                                <img class="image-trash" src="${pageContext.request.contextPath}/img/plus.png">
+                                <img class="image-put" src="${pageContext.request.contextPath}/img/plus.png">
                             </button>
                         </form>
                         <p class="product-number-text"><%=rowCaddy.getValue()%></p>
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
                             <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
-                                <img class="image-trash" src="${pageContext.request.contextPath}/img/minus.png">
+                                <img class="image-put" src="${pageContext.request.contextPath}/img/minus.png">
                             </button>
                         </form>
                     </div>
@@ -60,7 +60,7 @@
                     <form action="${pageContext.request.contextPath}/caddy/removeall" method="post">
                         <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                         <button class="table-cell-button" type="submit">
-                            <img class="image-trash" src="${pageContext.request.contextPath}/img/trash.png">
+                            <img class="image-put" src="${pageContext.request.contextPath}/img/trash.png">
                         </button>
                     </form>
                 </div>

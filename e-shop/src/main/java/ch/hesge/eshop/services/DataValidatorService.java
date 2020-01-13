@@ -23,25 +23,14 @@ public class DataValidatorService {
         return matcher.find();
     }
 
-
-    //https://stackoverflow.com/questions/5342375/regex-email-validation
+    //https://emailregex.com/
     public Boolean isValidEmail(String email) {
         if (email == null || email.isEmpty()) {
             return false;
         }
-        Pattern pattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,64}", Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         return matcher.find();
-        /*try
-        {
-            MailAddress m = new MailAddress(emailaddress);
-
-            return true;
-        }
-        catch (Attribute.FormatException)
-        {
-            return false;
-        }*/
     }
 
 }

@@ -22,11 +22,19 @@
 <body>
 <div class="top-bar">
     <jsp:include page="/menubar"/>
+    <%
+        String message = request.getParameter("message");
+        if (message != null && !message.isEmpty()) {
+    %>
+    <div class="banner">
+        <h2 class="banner-text">
+            <%= message %>
+        </h2>
+    </div>
+    <% } %>
 </div>
+
 <div class="container">
-    <% if(request.getAttribute("paymentSuccess") != null) {%>
-    <div class="confirmation">Merci pour votre achat !<%=request.getAttribute("paymentSuccess")%></div>
-    <%}%>
     <h1>Liste des Produits</h1>
     <div class="products-container">
         <%
