@@ -17,3 +17,5 @@ GETTING STARTED ****************************************************************
 5) allez dans le dossier "bin" de apache-tomee-webprofile > executez "startup.bat" (une console aparait et le serveur démarre)
 6) le serveur "déploie" automatiquement eshop-1.0.war en un dossier du même nom ("eshop-1.0") situé au meme endroit que eshop-1.0.war.
 7) le site web est maintenant accessible sur le navigateur par l'url suivante : "http://localhost:8080/eshop-1.0/"
+
+8) Afin de tester le bon fonctionnement du paiement, vous pouvez utiliser cette carte de test: 2222420000001113.
