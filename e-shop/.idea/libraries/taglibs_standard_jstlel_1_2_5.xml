@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="taglibs-standard-jstlel-1.2.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../Downloads/apache-tomee-7.1.1-webprofile/apache-tomee-webprofile-7.1.1/lib/taglibs-standard-jstlel-1.2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

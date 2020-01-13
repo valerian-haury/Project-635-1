@@ -36,7 +36,7 @@
                 <input type="hidden" name="id" value="${product.getID()}">
                 <button class="product-price-button" type="submit">
                     <p class="product-price-text">
-                        CHF ${String.format("%.2f",product.getPrice())}-
+                        CHF ${String.format("%.2f",product.getPrice())}
                     </p>
                     <img class="product-caddy-img"
                          src="${pageContext.request.contextPath}/img/caddie.png" alt="Checkout">

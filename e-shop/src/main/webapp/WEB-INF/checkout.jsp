@@ -12,7 +12,6 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<% CheckoutServlet checkoutServlet = new CheckoutServlet();%>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -51,13 +50,7 @@
                                 <img class="image-put" src="${pageContext.request.contextPath}/img/plus.png">
                             </button>
                         </form>
-                        <input type="number"
-                               min="1"
-                               max="999"
-                               value="<c:out value="<%=rowCaddy.getValue() %>" />"
-                               onchange="<% checkoutServlet.changeProductQuantity("WOHOOOOOO!");%>"
-                               onfocusout="<% checkoutServlet.changeProductQuantity("HOPUUU!");%>"
-                               pattern="(?<=\s|^)\d{1,3}(?=\s|$)" name="newQuantity"/>
+                        <input type="number" name="quantity" min="1" value="<%=rowCaddy.getValue()%>"/>
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
                             <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">

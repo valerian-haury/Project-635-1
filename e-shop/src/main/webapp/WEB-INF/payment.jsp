@@ -1,7 +1,3 @@
-<%@ page import="ch.hesge.eshop.models.Product" %>
-<%@ page import="java.util.Map" %>
-<%@ page import="java.time.LocalDate" %>
-
 <%--
   Created by IntelliJ IDEA.
   User: Mota
@@ -11,6 +7,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html>
@@ -26,38 +23,10 @@
     <div class="container-form">
         <form class="form" action="${pageContext.request.contextPath}/payment" method="post">
             <div class="caddie">
-                <table class="table">
-
-                    <%
-                        double total = 0.0;
-                        Map<Product, Integer> contentCaddy = (Map<Product, Integer>) request.getAttribute("contentCaddy");
-                        for (Map.Entry<Product, Integer> rowCaddy : contentCaddy.entrySet()) {
-                            double price = rowCaddy.getKey().getPrice() * rowCaddy.getValue();
-                            total += price;
-                    %>
-
-                    <tr class="row">
-                        <td>
-                            <div class="cell"><%=rowCaddy.getKey().getName()%>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="cell"><%=rowCaddy.getValue()%>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="cell">CHF <%=String.format("%.2f", price)%>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <%}%>
-                </table>
                 <div class="container-total">
                     <h3>Total</h3>
-                    <h3>CHF <%=String.format("%.2f", total)%></h3>
+                    <h3>CHF <c:out value="${sessionScope.totalPrice}"/></h3>
                 </div>
-
             </div>
             <div class="container-input">
                 <div class="field">
@@ -96,7 +65,7 @@
                             <p class="red">${monthMessage}</p>
                         </div>
                         <div class="input">
-                            <input name="year" type="number" placeholder="Année" min=<%=request.getAttribute("yearOfUse")%> required
+                            <input name="year" type="number" placeholder="Année" min=<c:out value="${sessionScope.yearOfUse}"/> required
                                    autocomplete="off" value="${year}"/>
                             <p class="red">${yearMessage}</p>
                         </div>
@@ -104,12 +73,15 @@
                 </div>
 
                 <div class="container-order">
-                    <% if (contentCaddy.size() > 0) { %>
-                    <button class="pay-link" type="submit">Commander</button>
-                    <% } else {%>
-                    <input type="hidden" required>
-                    <p class="pay-link-disable">Commander</p>
-                    <% } %>
+                    <c:choose>
+                        <c:when test="${sessionScope.totalPrice>0}">
+                            <button class="pay-link" type="submit">Commander</button>
+                        </c:when>
+                        <c:when test="${sessionScope.totalPrice==0}">
+                            <input type="hidden" required>
+                            <p class="pay-link-disable">Commander</p>
+                        </c:when>
+                    </c:choose>
                 </div>
             </div>
 

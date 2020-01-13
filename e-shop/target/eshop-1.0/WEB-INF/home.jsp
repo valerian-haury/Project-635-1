@@ -5,9 +5,9 @@
   Time: 16:51
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="ch.hesge.eshop.models.Product" %>
-<%@ page import="java.util.List" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <title>Accueil</title>
@@ -36,14 +36,16 @@
             </a>
         </div>
         <div class="products-container">
-            <%
-                List<Product> products = (List<Product>) request.getAttribute("products");
-                for (Product p : products) {
-            %>
-            <jsp:include page="/product" flush="true">
-                <jsp:param name="id" value="<%=p.getID()%>"/>
-            </jsp:include>
-            <%}%>
+
+
+            <c:forEach var="product" items="${requestScope.products}">
+                <jsp:include page="/product" flush="true">
+                    <jsp:param name="id" value="${product.getID()}"/>
+                </jsp:include>
+            </c:forEach>
+
+
+
         </div>
     </div>
 </body>

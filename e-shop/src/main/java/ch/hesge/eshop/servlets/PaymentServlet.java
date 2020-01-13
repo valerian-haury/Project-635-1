@@ -28,9 +28,21 @@ public class PaymentServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Map<Product, Integer> contentCaddy = (Map<Product, Integer>) req.getSession().getAttribute("caddy");
-        String yearOfUse = String.valueOf(LocalDate.now().getYear());
         req.setAttribute("contentCaddy", contentCaddy);
-        req.setAttribute("yearOfUse", yearOfUse);
+
+        Double totalPrice = 0.0;
+        for (Map.Entry<Product, Integer> entry : contentCaddy.entrySet()) {
+            totalPrice+=entry.getValue() * entry.getKey().getPrice();
+        }
+
+        req.getSession().setAttribute("totalPrice", totalPrice);
+
+        int caddySize = contentCaddy.size();
+        req.getSession().setAttribute("caddySize",caddySize);
+
+        int yearOfUse = LocalDate.now().getYear();
+        req.getSession().setAttribute("yearOfUse", yearOfUse);
+
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/payment.jsp").forward(req, resp);
     }
@@ -38,6 +50,8 @@ public class PaymentServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+
         if (validateDataForPayment(req)) {
             req.getSession().setAttribute("caddy", new HashMap<>());
             String message = "Merci pour votre commande !";
@@ -46,7 +60,6 @@ public class PaymentServlet extends HttpServlet {
         } else {
             doGet(req, resp);
         }
-
     }
 
     private boolean validateDataForPayment(HttpServletRequest req) {
