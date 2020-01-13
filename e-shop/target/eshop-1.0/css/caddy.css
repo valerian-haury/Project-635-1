@@ -1,0 +1,15 @@
+.container-caddy{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.container-caddy .image-caddy{
+    max-width: 40px;
+}
+
+.container-caddy .number-products-caddy{
+    text-align: right;
+    margin: 0 0 0 20px;
+    padding: 0;
+}

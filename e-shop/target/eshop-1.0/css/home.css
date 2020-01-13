@@ -1,0 +1,46 @@
+
+.home{
+    background: no-repeat right top;
+    background-size: 100%;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.container a{
+    color: black;
+    text-decoration: none;
+}
+
+.container-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+}
+
+.home-title{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 15px;
+}
+
+.home-description {
+    background-color: #ffffff;
+    max-width: 70%;
+    padding: 10px;
+    margin: 15px;
+}
+
+
+

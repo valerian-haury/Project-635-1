@@ -1,3 +1,4 @@
+ch\hesge\eshop\services\DataValidatorService.class
 ch\hesge\eshop\servlets\MenuBarServlet.class
 ch\hesge\eshop\filters\RemoveAllFromCaddyFilter.class
 ch\hesge\eshop\servlets\CheckoutServlet.class

@@ -1,0 +1,112 @@
+.container{
+    margin-top: 50px;
+}
+
+
+.table{
+    width: 100%;
+}
+tr td{
+    margin: 1px;
+
+}
+
+.row{
+    height: 50px;
+
+}
+
+.cell{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.product-image{
+    width: 100px;
+}
+
+.cell button, input[type="submit"], input[type="reset"] {
+    border: black 0px solid;
+    background-color: white;
+    color: inherit;
+    padding: 10px 10px 10px 10px ;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.table-cell-button{
+    width: 40px;
+    height: 40px;
+}
+
+.table-cell-container-button {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.image-put{
+    width: 20px;
+}
+
+.container-total{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container-pay{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.back-link{
+    color: black;
+    text-decoration: none;
+}
+
+
+.pay-link {
+    border: black 2px solid;
+    background-color: white;
+    color: inherit;
+    padding: 10px 10px 10px 10px ;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 70px;
+    text-decoration: none;
+}
+
+.pay-link-disable {
+    border: black 2px solid;
+    background-color: lightgray;
+    color: inherit;
+    padding: 10px 10px 10px 10px ;
+    font: inherit;
+    outline: inherit;
+    width: 70px;
+
+}
+
+.backtoshop-button {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.product-number-text {
+
+}
