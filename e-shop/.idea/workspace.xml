@@ -7,65 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea00b91-1b53-43e6-8c92-1b3316455988" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/listeners/ProductQuantityListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/CheckoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/CheckoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/CheckoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/CheckoutServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/PaymentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/caddy.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/checkout.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/filters/AddToCaddyFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/filters/DeleteFromCaddyFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/filters/RemoveAllFromCaddyFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/listeners/InitializationListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/listeners/SessionListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/models/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/services/DataValidatorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/services/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/CaddyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/CheckoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/HomeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/MenuBarServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/PaymentServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/ProductDetailServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/ProductServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/classes/ch/hesge/eshop/servlets/ProductsServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/errors/404.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/errors/errors.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/menubar.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/payment.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/product.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/product_detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/products.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/caddy.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/checkout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/general.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/menubar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/payments.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/product_detail.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/css/products.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/404.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/caddie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/errors.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/home_background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/minus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/petshoplogo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/petshoplogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/plus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/products/product_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/products/product_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/products/product_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0-SNAPSHOT/img/trash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/CheckoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/CheckoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/PaymentServlet.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +51,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -112,12 +67,6 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
   </component>
   <component name="ProjectId" id="1VWhH43zGy5ikhQmZDfW1KBPfmX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -137,12 +86,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578911038419" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="C:/apache-tomee-webprofile-7.1.1/lib/taglibs-standard-jstlel-1.2.5.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.27941176" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -505,84 +454,18 @@
     <state x="-1589" y="137" key="new project wizard/0.0.1920.1040/-1920.-94.1858.1080@-1920.-94.1858.1080" timestamp="1577378368844" />
     <state x="342" y="222" key="new project wizard/0.0.1920.1040/-1920.-94.1858.1080@0.0.1920.1040" timestamp="1577378018712" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/hesge/eshop/listeners/ProductQuantityListener.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/e_shop$TomEE_8_5_6.ic" NAME="TomEE 8.5.6 Coverage Results" MODIFIED="1578316554796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>eshop:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>JPA</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>eshop</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.sun.mail:javax.mail:1.5.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

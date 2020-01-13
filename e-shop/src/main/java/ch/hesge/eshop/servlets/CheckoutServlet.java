@@ -17,4 +17,8 @@ public class CheckoutServlet extends HttpServlet {
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/checkout.jsp").forward(req, resp);
     }
+
+    public void changeProductQuantity(String newQuantity) {
+        System.out.println(newQuantity);
+    }
 }

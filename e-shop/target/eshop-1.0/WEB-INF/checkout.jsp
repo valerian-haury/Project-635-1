@@ -1,6 +1,8 @@
 <%@ page import="ch.hesge.eshop.models.Product" %>
 <%@ page import="java.util.Map" %>
-
+<%@ page import="ch.hesge.eshop.servlets.CheckoutServlet" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="f" %>
 <%--
   Created by IntelliJ IDEA.
   User: Mota
@@ -10,7 +12,7 @@
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<% CheckoutServlet checkoutServlet = new CheckoutServlet();%>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,7 +51,14 @@
                                 <img class="image-put" src="${pageContext.request.contextPath}/img/plus.png">
                             </button>
                         </form>
-                        <p class="product-number-text"><%=rowCaddy.getValue()%></p>
+                        <input type="number"
+                               min="1"
+                               max="999"
+                               value="<c:out value="<%=rowCaddy.getValue() %>" />"
+                               onchange="<% checkoutServlet.changeProductQuantity("WOHOOOOOO!");%>"
+                               onfocusout="<% checkoutServlet.changeProductQuantity("HOPUUU!");%>"
+                               pattern="(?<=\s|^)\d{1,3}(?=\s|$)" name="newQuantity"/>
+
                         <form action="${pageContext.request.contextPath}/caddy/delete" method="post">
                             <input type="hidden" name="id" value="<%=rowCaddy.getKey().getID()%>">
                             <button class="table-cell-button" type="submit">
