@@ -2,13 +2,16 @@ package ch.hesge.eshop.servlets;
 
 import ch.hesge.eshop.models.Product;
 import ch.hesge.eshop.services.DataValidatorService;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import javax.inject.Inject;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -34,12 +37,16 @@ public class PaymentServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/payment.jsp").forward(req, resp);
     }
 
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (validateDataForPayment(req)) {
             req.getSession().setAttribute("caddy", new HashMap<>());
             String message = "Merci pour votre commande !";
-            resp.sendRedirect(req.getContextPath() + "/products?message=" + URLEncoder.encode(message, StandardCharsets.UTF_8.name()));
+            req.setAttribute("paymentSucess", message);
+            resp.sendRedirect("/WEB-INF/products.jsp");
+        } else {
+            doGet(req, resp);
         }
 
     }
@@ -48,18 +55,25 @@ public class PaymentServlet extends HttpServlet {
         String name = req.getParameter("name");
         String email = req.getParameter("email");
         String numberCard = req.getParameter("numberCard");
-        if (name == null || name.isEmpty() || name.trim().isEmpty()) {
+        Boolean validName = true;
+        Boolean validEmail = true;
+        Boolean validCard = true;
+
+        if (!dataValidatorService.isValidName(name)) {
             req.setAttribute("nameMessage", "Le nom est requis");
-            return false;
+            validName = false;
         }
         if (!dataValidatorService.isValidEmail(email)) {
-            req.setAttribute("numberCardMessage", "La carte de crédit est invalide");
-            return false;
+            req.setAttribute("emailMessage", "L'email est invalide");
+            validEmail = false;
         }
         if (!dataValidatorService.isValidNumberCard(numberCard)) {
-            req.setAttribute("emailMessage", "L'email est invalide");
-            return false;
+            req.setAttribute("numberCardMessage", "La carte de crédit est invalide");
+            validCard = false;
         }
-        return true;
+        if (validName && validEmail && validCard){
+            return true;
+        }
+        return false;
     }
 }

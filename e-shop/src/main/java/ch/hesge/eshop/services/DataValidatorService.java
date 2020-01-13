@@ -6,6 +6,12 @@ import java.util.regex.Pattern;
 
 public class DataValidatorService {
 
+    public Boolean isValidName(String name) {
+        if (name == null || name.isEmpty() || name.trim().isEmpty()) {
+            return false;
+        }
+        return true;
+    }
 
     //https://stackoverflow.com/questions/9315647/regex-credit-card-number-tests
     public Boolean isValidNumberCard(String numberCard) {

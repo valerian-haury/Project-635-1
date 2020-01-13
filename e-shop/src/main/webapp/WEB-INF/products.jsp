@@ -24,6 +24,9 @@
     <jsp:include page="/menubar"/>
 </div>
 <div class="container">
+    <% if(request.getAttribute("paymentSuccess") != null) {%>
+    <div class="confirmation">Merci pour votre achat !<%=request.getAttribute("paymentSuccess")%></div>
+    <%}%>
     <h1>Liste des Produits</h1>
     <div class="products-container">
         <%

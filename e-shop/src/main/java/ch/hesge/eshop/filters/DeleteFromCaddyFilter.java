@@ -33,10 +33,8 @@ public class DeleteFromCaddyFilter implements Filter {
         Map<Product, Integer> caddy = (Map<Product, Integer>) request.getSession().getAttribute("caddy");
         if (caddy.containsKey(product) && caddy.get(product)>1) {
             caddy.put(product, caddy.get(product)-1);
-        } else if (caddy.containsKey(product) && caddy.get(product) == 1){
-            caddy.remove(product);
-            request.getSession().setAttribute("caddy", caddy);
         }
+        request.getSession().setAttribute("caddy", caddy);
         filterChain.doFilter(servletRequest, servletResponse);
     }
 

@@ -90,7 +90,7 @@
                             <p class="red">${monthMessage}</p>
                         </div>
                         <div class="input">
-                            <input name="year" type="number" placeholder="Année" min=<%=LocalDate.now().getYear()%> max=<%=LocalDate.now().getYear()+100%> required
+                            <input name="year" type="number" placeholder="Année" min=<%=LocalDate.now().getYear()%> max=<%=LocalDate.now().getYear()+20%> required
                                    autocomplete="off" value="${year}"/>
                             <p class="red">${yearMessage}</p>
                         </div>
