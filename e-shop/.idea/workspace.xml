@@ -7,23 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea00b91-1b53-43e6-8c92-1b3316455988" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/payment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/product_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/product_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/products.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/PaymentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/ProductsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ch/hesge/eshop/servlets/ProductsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/checkout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/PaymentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/ProductsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/classes/ch/hesge/eshop/servlets/ProductsServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/payment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/payment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/product_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/product_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eshop-1.0/WEB-INF/products.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+            <state relative-caret-position="231">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,7 +58,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/payment.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -157,13 +141,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/product.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/product_detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/products.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/ProductsServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/payment.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java" />
       </list>
     </option>
   </component>
@@ -318,7 +302,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578951038147" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578951278140" />
     <property name="last_opened_file_path" value="C:/apache-tomee-webprofile-7.1.1/lib/taglibs-standard-jstlel-1.2.5.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -522,7 +506,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12772000" />
+    <option name="totallyTimeSpent" value="13015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,7 +521,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -548,7 +532,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -896,20 +880,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="59" column="16" lean-forward="true" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/payment.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="79" column="63" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/hesge/eshop/servlets/PaymentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

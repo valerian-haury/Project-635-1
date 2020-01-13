@@ -37,9 +37,6 @@ public class PaymentServlet extends HttpServlet {
 
         req.getSession().setAttribute("totalPrice", totalPrice);
 
-        int caddySize = contentCaddy.size();
-        req.getSession().setAttribute("caddySize",caddySize);
-
         int yearOfUse = LocalDate.now().getYear();
         req.getSession().setAttribute("yearOfUse", yearOfUse);
 
@@ -50,8 +47,6 @@ public class PaymentServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
         if (validateDataForPayment(req)) {
             req.getSession().setAttribute("caddy", new HashMap<>());
             String message = "Merci pour votre commande !";
